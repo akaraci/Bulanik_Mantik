@@ -13,10 +13,13 @@ z=[]
 
 for i,tutx in enumerate(x):
     z.insert(i,(1/(1+pow(tutx-30/5,4))))
+    y=np.append(y,(1/(1+pow(tutx-30/5,4))))
     
-    
-#Döngü kullanılmadan aşağıdaki satır da aynı fonskiyonu hesaplar.
-#c=np.append(y,(1/(1+pow(x-30/5,4))))  
-
 plt.plot(x,z)
 
+cevap='e'
+while(cevap=='e' or cevap=='E'):
+    userx=float(input("1-10 arası değer girin:"))
+    mx=(1/(1+pow(userx-30/5,4)))
+    print("Üyelik Derecesi:",mx)
+    cevap=input("Devam edecek misiniz (E/e)?")
