@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import skfuzzy as fuzz
 
 #Bu bulanık kümenin nihai çıkış kümesi olduğunu varayıyoruz.
+x=np.arange(2,4.5,0.1)
 out_mfx = fuzz.trapmf(x, [2, 2.5, 3, 4.5])
 
 # ------------------Durulaştırma değeri hesaplanıyor
