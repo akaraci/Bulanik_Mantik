@@ -128,4 +128,9 @@ result = fuzz.interp_membership(var_fiyat, out_set_final, hangisi)
 ax4.plot([0,hangisi],[result,result],'r')
 ax4.plot([hangisi,hangisi],[0,result],'r')
 
+#----Çıkışın her bir çıkış üyelik fonksiyonuna üyeliği hesaplanıyor
+print("\nÇıkışon Düşük Kümesine Üyeliği=",fuzz.interp_membership(var_fiyat,set_fiyat_dusuk,hangisi))
+print("Çıkışon Orta Kümesine Üyeliği=",fuzz.interp_membership(var_fiyat,set_fiyat_orta,hangisi))
+print("Çıkışon Yüksek Kümesine Üyeliği=",fuzz.interp_membership(var_fiyat,set_fiyat_yuksek,hangisi))
+
 
